@@ -1,0 +1,2 @@
+module TinyTownsRandomizerHelper
+end
