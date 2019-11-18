@@ -1,7 +1,23 @@
-%h1
-  TinyTownsRandomizer#index
+%h1.card
+  Tiny Towns Randomizer
 %p
-  Find me in app/views/tiny_towns_randomizer/index.html.erb
-  = @red_buildings.first
-  = @blue_buildings.first
-  = @purple_buildings
+  .card.blue
+    = @blue_buildings.first
+  .card.red
+    = @red_buildings.first
+  .card.yellow
+    = @yellow_buildings.first
+  .card.orange
+    = @orange_buildings.first
+  .card.green
+    = @green_buildings.first
+  .card.gray
+    = @gray_buildings.first
+  .card.black
+    = @black_buildings.first
+  .card.purple
+    = @purple_buildings.first
+  .card.purple
+    = @purple_buildings.second
+  .card.randomize
+    = link_to 'Randomize', root_path

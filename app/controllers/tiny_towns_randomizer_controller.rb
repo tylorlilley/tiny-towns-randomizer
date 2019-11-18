@@ -6,7 +6,7 @@ class TinyTownsRandomizerController < ApplicationController
   YELLOW_BUILDINGS =  %w( Tailor Theater Bakery Merchant )
   GRAY_BUILDINGS =  %w( Millstone Well Fountain Shed )
   BLACK_BUILDINGS =  %w( Factory Trading\ Post Bank Warehouse )
-  GREEN_BUILDINGS =  %w( Inn Alshouse Feast\ Hall Tavern )
+  GREEN_BUILDINGS =  %w( Inn Almshouse Feast\ Hall Tavern )
   PURPLE_BUILDINGS = %w( Obelisk\ of\ the\ Crescent Cathedral\ of\ Caterina Opaleye's\ Watch
                           Archive\ of\ the\ Second\ Age The\ Starloom The\ Sky\ Baths
                           Architect's\ Guild Grand\ Mausoleum\ of\ the\ Rodina Silva\ Forum
