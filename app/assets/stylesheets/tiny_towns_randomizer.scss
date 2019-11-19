@@ -1,6 +1,7 @@
 // Place all the styles related to the TinyTownsRandomizer controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
 
 $tiny-towns-blue:     #4c9ba2;
 $tiny-towns-orange:   #e18c3d;
@@ -12,11 +13,17 @@ $tiny-towns-black:    #163040;
 $tiny-towns-purple:   #b44c95;
 
 .card {
-  width:  300px;
-  max-height: 50px;
-  text-align: center;
+  max-width: 60%;
   margin: 12px;
-  padding: 12px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.icon {
+  max-width: 1.5em;
+  color: white;
+  position: absolute;
+  right: 12px;
 }
 
 .red {
@@ -49,5 +56,9 @@ $tiny-towns-purple:   #b44c95;
 }
 
 .purple {
+  color:            $tiny-towns-purple;
   background-color: $tiny-towns-purple;
+  &:hover {
+    color: white;
+  }
 }

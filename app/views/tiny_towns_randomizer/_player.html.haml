@@ -1,0 +1,10 @@
+.card.text-center
+  .card-header
+    Player #{player}
+  %ul.list-group
+    %li.list-group-item.purple
+      = render partial: "building", locals: {color: :purple}
+      /= @purple_buildings[player*2-2]
+    %li.list-group-item.purple
+      = render partial: "building", locals: {color: :purple}
+      /= @purple_buildings[player*2-1]

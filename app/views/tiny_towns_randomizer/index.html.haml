@@ -1,23 +1,18 @@
-%h1.card
-  Tiny Towns Randomizer
-%p
-  .card.blue
-    = @blue_buildings.first
-  .card.red
-    = @red_buildings.first
-  .card.yellow
-    = @yellow_buildings.first
-  .card.orange
-    = @orange_buildings.first
-  .card.green
-    = @green_buildings.first
-  .card.gray
-    = @gray_buildings.first
-  .card.black
-    = @black_buildings.first
-  .card.purple
-    = @purple_buildings.first
-  .card.purple
-    = @purple_buildings.second
-  .card.randomize
-    = link_to 'Randomize', root_path
+.card.text-center
+  .card-header
+    Tiny Towns Randomizer
+  %ul.list-group
+    = render partial: "building", locals: {color: :blue}
+    = render partial: "building", locals: {color: :red}
+    = render partial: "building", locals: {color: :yelow}
+    = render partial: "building", locals: {color: :orange}
+    = render partial: "building", locals: {color: :green}
+    = render partial: "building", locals: {color: :gray}
+    = render partial: "building", locals: {color: :black}
+
+= render partial: "player", locals: {player: 1}
+= render partial: "player", locals: {player: 2}
+= render partial: "player", locals: {player: 3}
+= render partial: "player", locals: {player: 4}
+= render partial: "player", locals: {player: 5}
+= render partial: "player", locals: {player: 6}

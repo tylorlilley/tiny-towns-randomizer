@@ -5,5 +5,5 @@ module TinyTownsRandomizerHelper
     all_options.shuffle
     all_options << all_options.shift if current_option == all_options.first
   end
-  
+
 end
