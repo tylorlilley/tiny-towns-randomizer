@@ -3,12 +3,12 @@
     Tiny Towns Randomizer
   %ul.list-group
     = render partial: "building", locals: {color: :blue}
-    = render partial: "building", locals: {color: :red}
-    = render partial: "building", locals: {color: :yelow}
-    = render partial: "building", locals: {color: :orange}
-    = render partial: "building", locals: {color: :green}
-    = render partial: "building", locals: {color: :gray}
-    = render partial: "building", locals: {color: :black}
+    = render partial: "building", locals: {color: :red, randomizable: true}
+    = render partial: "building", locals: {color: :yellow, randomizable: true}
+    = render partial: "building", locals: {color: :orange, randomizable: true}
+    = render partial: "building", locals: {color: :green, randomizable: true}
+    = render partial: "building", locals: {color: :gray, randomizable: true}
+    = render partial: "building", locals: {color: :black, randomizable: true}
 
 = render partial: "player", locals: {player: 1}
 = render partial: "player", locals: {player: 2}

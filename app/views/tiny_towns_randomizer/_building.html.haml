@@ -1,3 +1,8 @@
-%li.list-group-item{class: color}
-  Test Text for color
-  = open_iconic :icon, :loop_circular
+- randomizable ||= false
+%li.list-group-item{id: color}
+  .text
+    Regular Building
+  - if randomizable
+    %a{ href: '#'}
+      .icon{ alt: "Edit Entry", data: { behavior: "randomize-building", color: color } }
+        = svg 'loop-circular'

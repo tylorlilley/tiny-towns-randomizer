@@ -17,40 +17,41 @@ $tiny-towns-purple:   #b44c95;
   margin: 12px;
   vertical-align: middle;
   position: relative;
+  color: white;
 }
 
 .icon {
-  max-width: 1.5em;
-  color: white;
+  fill: white;
   position: absolute;
   right: 12px;
+  top: 8px;
 }
 
-.red {
+#red {
   background-color: $tiny-towns-red;
 }
 
-.blue {
+#blue {
   background-color: $tiny-towns-blue;
 }
 
-.green {
+#green {
   background-color: $tiny-towns-green;
 }
 
-.orange {
+#orange {
   background-color: $tiny-towns-orange;
 }
 
-.yellow {
+#yellow {
   background-color: $tiny-towns-yellow;
 }
 
-.gray {
+#gray {
   background-color: $tiny-towns-gray;
 }
 
-.black {
+#black {
   background-color: $tiny-towns-black;
   color: white;
 }
