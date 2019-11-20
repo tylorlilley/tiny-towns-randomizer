@@ -1,8 +1,11 @@
 - randomizable ||= false
-%li.list-group-item{id: color}
+- hidden ||= false
+- number ||= 0
+%li.list-group-item{class: "#{color} #{'hidden' if hidden}"}
   .text
     Regular Building
   - if randomizable
     %a{ href: '#'}
-      .icon{ alt: "Edit Entry", data: { behavior: "randomize-building", color: color } }
+      .icon.icon-right{ alt: "Randomize #{color} Building",
+                        data: { behavior: "randomize-building", color: color } }
         = svg 'loop-circular'

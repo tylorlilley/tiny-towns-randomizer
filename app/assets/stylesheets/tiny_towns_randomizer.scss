@@ -13,52 +13,82 @@ $tiny-towns-black:    #163040;
 $tiny-towns-purple:   #b44c95;
 
 .card {
-  max-width: 60%;
-  margin: 12px;
+  margin: 12px 0 12px 0;
   vertical-align: middle;
   position: relative;
-  color: white;
 }
 
 .icon {
-  fill: white;
   position: absolute;
-  right: 12px;
   top: 8px;
 }
 
-#red {
+.icon.icon-right { right: 12px; }
+.icon.icon-left { left: 12px; }
+
+.red {
   background-color: $tiny-towns-red;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#blue {
+.blue {
   background-color: $tiny-towns-blue;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#green {
+.green {
   background-color: $tiny-towns-green;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#orange {
+.orange {
   background-color: $tiny-towns-orange;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#yellow {
+.yellow {
   background-color: $tiny-towns-yellow;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#gray {
+.gray {
   background-color: $tiny-towns-gray;
+  color: white;
+  .icon {
+    fill: white;
+  }
 }
 
-#black {
+.black {
   background-color: $tiny-towns-black;
   color: white;
+  .icon {
+    fill: white;
+  }
 }
 
 .purple {
-  color:            $tiny-towns-purple;
+  color: white;
   background-color: $tiny-towns-purple;
+}
+
+.purple.hidden {
+  color: $tiny-towns-purple;
   &:hover {
     color: white;
   }
